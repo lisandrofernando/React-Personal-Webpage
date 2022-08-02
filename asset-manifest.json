@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Personal-Webpage-gh-pages/static/css/main.5b703d26.css",
-    "main.js": "/React-Personal-Webpage-gh-pages/static/js/main.f0175750.js",
-    "static/media/Pic.JPG": "/React-Personal-Webpage-gh-pages/static/media/Pic.1c2e20a7588e0114090b.JPG",
-    "static/media/Resume.docx": "/React-Personal-Webpage-gh-pages/static/media/Resume.a085d212ca31ef8afa53.docx",
-    "static/media/bg-texture.jpg": "/React-Personal-Webpage-gh-pages/static/media/bg-texture.21f0efba4a688ddafa6a.jpg",
-    "index.html": "/React-Personal-Webpage-gh-pages/index.html",
-    "main.5b703d26.css.map": "/React-Personal-Webpage-gh-pages/static/css/main.5b703d26.css.map",
-    "main.f0175750.js.map": "/React-Personal-Webpage-gh-pages/static/js/main.f0175750.js.map"
+    "main.css": "/React-Personal-Webpage/static/css/main.21ee9ad4.css",
+    "main.js": "/React-Personal-Webpage/static/js/main.ffb3ed0d.js",
+    "static/media/Pic.JPG": "/React-Personal-Webpage/static/media/Pic.1c2e20a7588e0114090b.JPG",
+    "static/media/Resume.docx": "/React-Personal-Webpage/static/media/Resume.a085d212ca31ef8afa53.docx",
+    "static/media/bg-texture.jpg": "/React-Personal-Webpage/static/media/bg-texture.21f0efba4a688ddafa6a.jpg",
+    "index.html": "/React-Personal-Webpage/index.html",
+    "main.21ee9ad4.css.map": "/React-Personal-Webpage/static/css/main.21ee9ad4.css.map",
+    "main.ffb3ed0d.js.map": "/React-Personal-Webpage/static/js/main.ffb3ed0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b703d26.css",
-    "static/js/main.f0175750.js"
+    "static/css/main.21ee9ad4.css",
+    "static/js/main.ffb3ed0d.js"
   ]
 }
