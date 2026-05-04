@@ -4,7 +4,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {BsTelephone} from 'react-icons/bs'
 import {MdOutlineLocationOn} from 'react-icons/md'
 import { useRef } from 'react';
-import emailjs, { send } from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef();
