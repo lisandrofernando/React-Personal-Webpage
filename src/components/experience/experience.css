@@ -1,66 +1,128 @@
-.experience__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.experience__container > div{
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+/* ========== Role Card ========== */
+.role__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  transition: var(--transition);
 }
 
-.experience__container > div:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: pointer;
+.role__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 
-.experience__container > div h3{
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
+/* ========== Icon ========== */
+.role__icon-wrapper {
+  background: var(--color-primary);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.experience__content{
-    display: grid;
+.role__icon {
+  font-size: 2.2rem;
+  color: var(--color-bg);
+}
+
+/* ========== Icon Animations ========== */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.spin  { animation: spin  4s linear infinite; }
+.float { animation: float 3s ease-in-out infinite; }
+.pulse { animation: pulse 2s ease-in-out infinite; }
+.bounce{ animation: bounce 2s ease-in-out infinite; }
+.swing { animation: swing 2.5s ease-in-out infinite; }
+
+/* ========== Card Content ========== */
+.role__card h3 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.role__card p {
+  font-size: 0.85rem;
+  color: var(--color-light);
+  line-height: 1.6;
+}
+
+/* ========== Skills Tags ========== */
+.role__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.role__skill {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+/* ========== Download Button ========== */
+.role__btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* ========== Media Queries (Tablet) ========== */
+@media screen and (max-width: 1024px) {
+  .experience__container {
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+  }
 }
 
-.experience__details-icon{
-    margin-top: 6px;
-    color: var(--color-primary);
-}
-
-/*======== Media Quries (Tables)======= */
-
-@media screen and (max-width: 1024px){
- 
-   .experience__container{
+/* ========== Media Queries (Phone) ========== */
+@media screen and (max-width: 600px) {
+  .experience__container {
     grid-template-columns: 1fr;
-   }
-   .experience__container > div{
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
-   }
-   .experience__content{
-    padding: 1rem;
-   }
-}
-
-/*======== Media Quries (Phones)======= */
-
-@media screen and (max-width: 600px){
-   .experience__container{
     gap: 1rem;
-   }
-   .experience__container > div{
-    width: 100%;
-    padding: 2rem 1rem;
-   }
-
- }
+  }
+}

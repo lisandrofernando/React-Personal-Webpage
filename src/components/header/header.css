@@ -10,6 +10,21 @@ header{
     position: relative;
 }
 
+/* ========== Role Animation ======= */
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+h5.text-light {
+  font-size: 1.2rem;
+}
+
 /* ========== CTA STYLING ======= */
 .cta{
     margin-top: 2.5rem;
