@@ -33,14 +33,14 @@ const roles = [
     title: 'AI Engineer',
     description: 'I design and deploy AI-powered pipelines, LLM integrations, and intelligent automation systems that solve real-world problems across industries. From prompt engineering to full AI workflow architecture — I build solutions that think.',
     skills: ['Python · LLMs', 'Prompt Engineering', 'AI Pipelines', 'Machine Learning', 'Data Processing', 'API Integration'],
-    cv: '/cv/CV_SDET.pdf'
+    cv: '/cv/CV_AI.pdf'
   },
   {
     icon: <MdManageAccounts className='role__icon swing' aria-hidden="true" />,
     title: 'Project Manager',
     description: 'Led cross-functional engineering teams across tech and energy industries. I use AI tools for risk forecasting, sprint planning insights, and automated reporting — turning project data into actionable decisions that keep teams aligned and deadlines met.',
     skills: ['Agile · Scrum', 'Stakeholder Mgmt', 'Risk Management', 'Business Analysis', 'Team Leadership', 'Roadmap Planning'],
-    cv: '/cv/CV_Devops.pdf'
+    cv: '/cv/CV_Project_management.pdf'
   }
 ]
 
