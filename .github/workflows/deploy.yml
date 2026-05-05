@@ -42,7 +42,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
-        cname: lisandrofernando.github.io
 
   test-only:
     runs-on: ubuntu-latest
