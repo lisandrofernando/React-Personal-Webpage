@@ -6,41 +6,43 @@ import { GiOilPump, GiMechanicalArm } from 'react-icons/gi'
 import { MdManageAccounts } from 'react-icons/md'
 import { Helmet } from 'react-helmet'
 
+const publicUrl = process.env.PUBLIC_URL || ''
+
 const roles = [
   {
     icon: <TbSettingsAutomation className='role__icon spin' aria-hidden="true" />,
     title: 'SDET Engineer',
     description: 'Built end-to-end automation frameworks for UI and API testing. I leverage AI-powered test generation, self-healing locators, and LLM-assisted defect analysis to drastically reduce manual effort and deliver faster, smarter test coverage.',
     skills: ['Selenium · Java', 'Playwright · Python', 'REST Assured', 'Serenity · Cucumber', 'Jenkins · CI/CD', 'TestNG · Maven'],
-    cv: '/cv/CV_SDET.pdf'
+    cv: `${publicUrl}/cv/CV_SDET.pdf`
   },
   {
     icon: <FaCloud className='role__icon float' aria-hidden="true" />,
     title: 'Cloud & DevOps Engineer',
     description: 'Designed CI/CD pipelines and cloud infrastructure on Azure and AWS. I use AI-driven monitoring, anomaly detection, and intelligent automation scripts to predict failures before they happen and keep systems running at peak performance.',
     skills: ['Azure · AWS', 'Jenkins · GitHub Actions', 'Docker · Kubernetes', 'Prometheus · Grafana', 'Datadog', 'Python · Bash'],
-    cv: '/cv/CV_Devops.pdf'
+    cv: `${publicUrl}/cv/CV_Devops.pdf`
   },
   {
     icon: <GiOilPump className='role__icon pulse' aria-hidden="true" />,
     title: 'Petroleum Engineer',
     description: 'Managed oil & gas field operations across multiple sites. I apply AI-driven production optimization models and predictive maintenance algorithms to reduce downtime, cut costs, and make data-backed engineering decisions in the field.',
     skills: ['Field Operations', 'Project Management', 'Production Optimization', 'Drilling Engineering', 'HSE Standards', 'Data Analysis'],
-    cv: '/cv/CV_Petroleum.pdf'
+    cv: `${publicUrl}/cv/CV_Petroleum.pdf`
   },
   {
     icon: <FaRobot className='role__icon bounce' aria-hidden="true" />,
     title: 'AI Engineer',
     description: 'I design and deploy AI-powered pipelines, LLM integrations, and intelligent automation systems that solve real-world problems across industries. From prompt engineering to full AI workflow architecture — I build solutions that think.',
     skills: ['Python · LLMs', 'Prompt Engineering', 'AI Pipelines', 'Machine Learning', 'Data Processing', 'API Integration'],
-    cv: '/cv/CV_AI.pdf'
+    cv: `${publicUrl}/cv/CV_AI.pdf`
   },
   {
     icon: <MdManageAccounts className='role__icon swing' aria-hidden="true" />,
     title: 'Project Manager',
     description: 'Led cross-functional engineering teams across tech and energy industries. I use AI tools for risk forecasting, sprint planning insights, and automated reporting — turning project data into actionable decisions that keep teams aligned and deadlines met.',
     skills: ['Agile · Scrum', 'Stakeholder Mgmt', 'Risk Management', 'Business Analysis', 'Team Leadership', 'Roadmap Planning'],
-    cv: '/cv/CV_Project_management.pdf'
+    cv: `${publicUrl}/cv/CV_Project_management.pdf`
   }
 ]
 
