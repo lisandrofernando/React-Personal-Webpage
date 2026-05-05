@@ -1,4 +1,10 @@
 node_modules/
 build/
+coverage/
 .DS_Store
 *.env
+coverage/lcov-report/src/
+coverage/clover.xml
+coverage/coverage-final.json
+coverage/lcov-report/index.html
+coverage/lcov.info

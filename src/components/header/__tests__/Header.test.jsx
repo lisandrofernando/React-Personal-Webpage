@@ -1,5 +1,5 @@
-import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import React, { act } from 'react';
+import { render, screen, cleanup } from '@testing-library/react';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from '../Header';
 
@@ -17,7 +17,8 @@ describe('Header Component', () => {
   });
 
   afterEach(() => {
-    jest.runOnlyPendingTimers();
+    cleanup();
+    jest.clearAllTimers();
     jest.useRealTimers();
   });
 
@@ -50,7 +51,9 @@ describe('Header Component', () => {
     );
     
     // Advance timers to see the typewriter effect
-    jest.advanceTimersByTime(100);
+    act(() => {
+      jest.advanceTimersByTime(100);
+    });
     
     const roleText = screen.getByRole('status');
     expect(roleText).toBeInTheDocument();
